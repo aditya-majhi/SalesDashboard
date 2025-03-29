@@ -148,7 +148,7 @@ const ChartCard = ({ type, title, data }: ChartCardProps) => {
                 animationEasing="ease-out"
                 radius={[5, 5, 0, 0]}
               >
-                {data.data.map((entry: any, index: number) => (
+                {data.data.map((_: any, index: number) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={data.colors[index % data.colors.length]}
@@ -184,7 +184,7 @@ const ChartCard = ({ type, title, data }: ChartCardProps) => {
                 }
                 labelLine={false}
               >
-                {data.data.map((entry: any, index: number) => (
+                {data.data.map((_: any, index: number) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={data.colors[index % data.colors.length]}

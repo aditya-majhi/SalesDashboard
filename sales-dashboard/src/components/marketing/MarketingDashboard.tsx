@@ -49,7 +49,6 @@ import type { DragEndEvent } from "@dnd-kit/core";
 
 const MarketingDashboard = () => {
   const { data, filters, setFilters } = useMarketingData();
-  const [isDraggable, setIsDraggable] = useState(false);
 
   // DND setup
   const [items, setItems] = useState([
@@ -283,7 +282,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="stats"
                     id="stats"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                       {data.stats.map((stat) => (
@@ -299,7 +298,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="channels"
                     id="channels"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <Card>
                       <CardHeader className="flex flex-row items-center justify-between">
@@ -394,7 +393,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="attribution"
                     id="attribution"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <ChartCard
                       type="donut"
@@ -410,7 +409,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="campaigns"
                     id="campaigns"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <Card>
                       <CardHeader className="flex flex-row items-center justify-between">
@@ -517,7 +516,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="social"
                     id="social"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <Card>
                       <CardHeader className="flex flex-row items-center justify-between">
@@ -591,7 +590,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="funnel"
                     id="funnel"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <Card>
                       <CardHeader>
@@ -645,7 +644,7 @@ const MarketingDashboard = () => {
                   <DraggableDashboardItem
                     key="geography"
                     id="geography"
-                    isDraggable={isDraggable}
+                    isDraggable={false}
                   >
                     <Card>
                       <CardHeader className="flex flex-row items-center justify-between">

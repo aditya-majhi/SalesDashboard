@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import dashboardData from "@/data/DashboardData";
 import { StatData } from "@/components/dashboard/StatCard";
 import { Product } from "@/components/dashboard/TopProductCard";
@@ -26,23 +25,7 @@ interface DashboardData {
 }
 
 const useDashboardData = (): DashboardData => {
-    const [data, setData] = useState<DashboardData>(dashboardData);
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        // Simulate data loading delay for demonstration
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    // You could add filtering functionality here
-    // For example:
-    // const filterDataByPeriod = (period: string) => {
-    //   // Filter logic here
-    // };
+    const data = dashboardData; // Fetch or import your data here
 
     return data;
 };

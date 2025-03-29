@@ -21,9 +21,7 @@ import {
   Sun,
   Moon,
   Bell,
-  Search,
   Menu,
-  Download,
   LucideIcon,
   X,
 } from "lucide-react";
@@ -109,17 +107,6 @@ function Navigation() {
           </div>
 
           <div className="flex items-center space-x-3">
-            <div className="hidden md:flex items-center space-x-3">
-              <Button
-                variant="outline"
-                size="sm"
-                className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-              >
-                <Search className="h-4 w-4 mr-2" />
-                <span className="text-sm">Search</span>
-              </Button>
-            </div>
-
             {/* Theme Toggle */}
             <div className="relative">
               <div
@@ -212,13 +199,6 @@ function Navigation() {
                       );
                     })}
                   </nav>
-
-                  <div className="mt-6 space-y-2">
-                    <Button variant="outline" className="w-full justify-start">
-                      <Search className="h-4 w-4 mr-2" />
-                      <span>Search</span>
-                    </Button>
-                  </div>
 
                   <div className="mt-auto pt-6 border-t border-gray-200 dark:border-gray-800">
                     <div className="flex items-center">

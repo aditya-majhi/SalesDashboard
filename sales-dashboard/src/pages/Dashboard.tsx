@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import TimePeriodSelector from "@/components/dashboard/TimePeriodSelector";
 import DashboardControls from "@/components/dashboard/DashboardControls";
@@ -10,7 +10,6 @@ import TopProductsCard, {
 import RecentTransactionsCard, {
   Transaction,
 } from "@/components/dashboard/RecentTransactionCard";
-import Footer from "@/components/dashboard/Footer";
 import Notification from "@/components/dashboard/Notification";
 import DraggableDashboardItem from "@/components/dashboard/DragableDashboardItem";
 import useDashboardData from "@/hooks/useDashboardData";
