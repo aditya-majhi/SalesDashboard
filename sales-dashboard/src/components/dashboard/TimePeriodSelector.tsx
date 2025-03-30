@@ -43,7 +43,7 @@ const TimePeriodSelector = ({
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900">
+    <div className="bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between space-x-4">
         <div className="flex items-center space-x-4">
           <Popover>
